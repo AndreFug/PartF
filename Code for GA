@@ -1,0 +1,4 @@
+% GA
+options1 = tunefisOptions("Method","ga");
+options1.MethodOptions.MaxGenerations = 10;
+fisout_GA = tunefis(fis,[in;out],inputArray,outputArray,options1);
