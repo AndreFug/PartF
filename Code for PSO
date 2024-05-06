@@ -1,0 +1,4 @@
+% PSO
+options2 = tunefisOptions("Method","particleswarm");
+options2.MethodOptions.MaxIterations = 10;
+fisout_PSO = tunefis(fis,[in;out;rule],inputArray,outputArray,options2);
