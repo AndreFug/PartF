@@ -1,0 +1,2 @@
+% ANFIS
+fisout_ANFIS = tunefis(fis,[in;out],inputArray,outputArray,tunefisOptions("Method","anfis"));
