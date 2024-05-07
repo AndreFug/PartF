@@ -5,7 +5,7 @@ Ais2101 - Part F
 
 clear;\
 clc;
-\
+
 
 data = readtable('penguins.csv');
 \
