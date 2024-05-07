@@ -3,7 +3,7 @@ Ais2101 - Part F
 
 ## Part 1 code solution
 
-clear;
+clear;\\
 clc;
 
 
