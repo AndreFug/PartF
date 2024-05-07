@@ -8,22 +8,22 @@ clc;
 
 
 data = readtable('penguins.csv');
-\
+
 cvp = cvpartition(height(data),'HoldOut',0.3);
-\idxTrain = training(cvp);
-\idxTest = test(cvp);
-\
+idxTrain = training(cvp);
+idxTest = test(cvp);
+
 trainData = data(idxTrain,:);
-\testData = data(idxTest,:);
+testData = data(idxTest,:);
 
-\inputData = data(:, 1:end-1);
-\outputData = data(:, end); 
+inputData = data(:, 1:end-1);
+outputData = data(:, end); 
 
-\inputArray = table2array(inputData);
-\outputArray = table2array(outputData);
+inputArray = table2array(inputData);
+outputArray = table2array(outputData);
 
-\inputArray = double(categorical(inputArray));
-\outputArray = double(categorical(outputArray));
+inputArray = double(categorical(inputArray));
+outputArray = double(categorical(outputArray));
 
 
 \fis = genfis(inputArray,outputArray);
